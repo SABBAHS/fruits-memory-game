@@ -6,31 +6,119 @@ box-sizing: border-box;
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
 
+/*Header*/
+
+h1 {
+    font-family: 'Unbounded', sans-serif; 
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: #ffcc80;
+    }
+
+.start-btn {
+    position: absolute;
+    top: 25%;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #ffcc80;
+    font-size: large;
+    color: purple;
+    border: none;
+
+}
 /*Container*/
 
 .container-board {
 display: block;
 column-count: 4;
-max-width: 900px;
+max-width: 800px;
 position: absolute;
-top: 500px;
-left: 500px;
+margin: 30% 20% 20% 20%;
 background: linear-gradient(#ffffff, #fffdb9);
 
 }
 
-.card, .front {
-
-}
 
 body {
-    background: lightblue;
+    background: mintcream;
     display: flex;
     justify-content: center;
 }
 
 img {
-height: 80px; 
-width: 80px;
+height: 70px; 
+width: 70px;
 margin: 70px;
+}
+
+
+@media only screen and (max-width: 768px) and (min-width:430px) {
+   
+    h1 {
+    top: 8%;
+    left: 30%;
+    }
+    .container-board {
+    max-width: 600px;
+    margin-top: 40%;
+    }
+
+    .start-btn {
+    top: 20%;
+}
+}
+
+@media only screen and (max-width: 430px) and (min-width:320px) {
+   
+    h1 {
+    top:10%;
+    left: 20%;
+    font-size: 30px;
+    }
+    .container-board {
+    max-width: 800px;
+    margin-top: 60%;
+    }
+
+    img {
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    }
+
+    .start-btn {
+    top: 18%;
+    width: 80px;
+}
+
+}
+
+@media only screen and (max-width: 320px) {
+   
+    h1 {
+    top:10%;
+    left: 40px;
+    font-size: 30px;
+    }
+    .container-board {
+    max-width: 700px;
+    margin-top: 60%;
+    }
+
+    img {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    }
+
+    .start-btn {
+    top: 18%;
+    width: 80px;
+    font-size: small;
+}
+
 }
