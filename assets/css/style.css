@@ -1,0 +1,36 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
+
+/*Container*/
+
+.container-board {
+display: block;
+column-count: 4;
+max-width: 900px;
+position: absolute;
+top: 500px;
+left: 500px;
+background: linear-gradient(#ffffff, #fffdb9);
+
+}
+
+.card, .front {
+
+}
+
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+height: 80px; 
+width: 80px;
+margin: 70px;
+}
