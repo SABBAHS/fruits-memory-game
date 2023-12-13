@@ -31,7 +31,7 @@ h1 {
     border: none;
 }
 
-.refresh-btn {
+.refreshid {
     position: absolute;
     top: 50%;
     left: 15%;
@@ -46,11 +46,11 @@ h1 {
 }
 /*Container*/
 
-.container-board {
+#container-board {
 display: grid;
 grid-template-columns: repeat(4, auto);
 max-width: 700px;
-top: 10%;
+top: 20%;
 position: absolute;
 margin-left: 40%;
 background: linear-gradient(#ffffff, #fffdb9);
