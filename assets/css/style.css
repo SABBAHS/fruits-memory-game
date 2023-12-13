@@ -11,8 +11,8 @@ box-sizing: border-box;
 h1 {
     font-family: 'Unbounded', sans-serif; 
     position: absolute;
-    top: 15%;
-    left: 40%;
+    top: 25%;
+    left: 5%;
     font-size: 45px;
     letter-spacing: 3px;
     color: #ffcc80;
@@ -20,7 +20,21 @@ h1 {
 
 .start-btn {
     position: absolute;
-    top: 25%;
+    top: 40%;
+    left: 15%;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #ffcc80;
+    font-size: large;
+    color: purple;
+    border: none;
+}
+
+.refresh-btn {
+    position: absolute;
+    top: 50%;
+    left: 15%;
     width: 100px;
     height: 50px;
     border-radius: 20px;
@@ -33,11 +47,12 @@ h1 {
 /*Container*/
 
 .container-board {
-display: block;
-column-count: 4;
-max-width: 800px;
+display: grid;
+grid-template-columns: repeat(4, auto);
+max-width: 700px;
+top: 10%;
 position: absolute;
-margin: 30% 20% 20% 20%;
+margin-left: 40%;
 background: linear-gradient(#ffffff, #fffdb9);
 
 }
@@ -50,11 +65,14 @@ body {
 }
 
 img {
-height: 140px;
-width: 140px;
-margin: 15px;
+    height: 120px;
+    width: 120px;
+    margin: 10px;
 }
 
+.card.clicked {
+    background-color: orange;
+}
 
 @media only screen and (max-width: 768px) and (min-width:430px) {
    
@@ -63,12 +81,19 @@ margin: 15px;
     left: 30%;
     }
     .container-board {
-    max-width: 600px;
-    margin-top: 40%;
+    max-width: 500px;
+    margin: 30%;
     }
 
     .start-btn {
     top: 20%;
+    left: 45%;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    margin: 5px;
 }
 }
 
